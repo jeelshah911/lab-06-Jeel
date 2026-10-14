@@ -97,14 +97,7 @@
 5. <ins>Create tests</ins>
  - First, delete the `ExampleUnitTest` File
  - Then, create a new file called `WizardTest` under the folder `com.example.lab_6 (test)`
- - Add the following setup code in `WizardTest` inside the WizardTest class@Test
-fun castSpell_explosion_successful() {
-    val damageDealt = evilWizard.castSpell("Explosion")
-
-    assertEquals(30, damageDealt) // spellPower of 10 * 3 = 30
-
-    assertEquals(20, evilWizard.mana) // mana of 30 - 10 = 20
-}:
+ - Add the following setup code in `WizardTest` inside the `WizardTest` class:
  ```kotlin
  private lateinit var evilWizard: Wizard
 
@@ -146,10 +139,6 @@ fun castSpell_explosion_unsuccessful() {
 - One way to do this is to right-click the `WizardTest` file and click `Run 'WizardTest'`
 - You should see that 2/2 tests passed!
 
-> [!NOTE]
-> - The `walkthrough.md` contains the complete code for `Wizard`, `WizardTest`, and `build.gradle.kts (:app)` for double-checking purposes
-> - While you could simply copy and paste the code, you're stripping yourself of a learning opportunity :)
-
 ## 2. Lab 6 Participation Exercise
 If you've been following along with the walkthrough, this exercise should be fairly straightforward!
 1. Make a test to check the behaviour when we successfully cast a *frostbite* spell
@@ -161,7 +150,8 @@ If you've been following along with the walkthrough, this exercise should be fai
     - Hint: Use `git clone`
 3. Add your Android Studio Project to your forked repository
     - Hint: Use `git add`, `git commit`, and `git push`
-    - Make sure to upload all your generated Dokka files, since the Dokka output folder is inside `/build`, which is often included in `.gitignore` by default.
+    - Make sure to upload all your generated Dokka files
+      - Note: The Dokka output folder is inside `/build`, which is often included in `.gitignore` by default.
 4. Update the `README.md` file with your details and references/collaborators
 5. Update the `LICENSE.md` file with your full name
 6. Submit the link to your GitHub repository on Canvas
